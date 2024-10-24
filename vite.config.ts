@@ -5,14 +5,18 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
+    outDir: 'dist',
     rollupOptions: {
       output: {
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name]-[hash].js',
         assetFileNames: 'assets/[name].[ext]'
       }
-    },
-    outDir: 'dist',
-    assetsDir: 'assets'
+    }
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript'
+    }
   }
 });

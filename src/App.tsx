@@ -30,7 +30,6 @@ function App() {
             </p>
           </div>
         </div>
-
         <NewsGrid />
       </main>
       

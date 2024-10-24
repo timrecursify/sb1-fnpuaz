@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: './',
   build: {
     rollupOptions: {
       output: {
@@ -12,6 +12,13 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[hash].[ext]',
       },
     },
-    sourcemap: true
+    target: 'es2015',
+    minify: 'esbuild',
+    cssMinify: true,
+    outDir: 'dist'
+  },
+  server: {
+    port: 3000,
+    strictPort: true
   }
 });

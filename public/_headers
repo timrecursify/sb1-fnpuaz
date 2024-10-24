@@ -5,3 +5,4 @@
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
   Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: browsing-topics=(), private-state-token-redemption=(), private-state-token-issuance=()

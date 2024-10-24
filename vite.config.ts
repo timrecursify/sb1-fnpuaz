@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/',
   build: {
-    outDir: 'dist',
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name].[hash].js',
@@ -12,11 +12,6 @@ export default defineConfig({
         assetFileNames: 'assets/[name].[hash].[ext]',
       },
     },
-  },
-  server: {
-    cors: true
-  },
-  optimizeDeps: {
-    exclude: ['js-big-decimal']
+    sourcemap: true
   }
 });

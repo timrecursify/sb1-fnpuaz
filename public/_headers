@@ -1,7 +1,7 @@
 /*
   Content-Type: text/javascript
   X-Content-Type-Options: nosniff
-  Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
   Access-Control-Allow-Origin: *
   Cross-Origin-Resource-Policy: cross-origin
   Cross-Origin-Opener-Policy: same-origin

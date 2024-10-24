@@ -1,12 +1,13 @@
 /*
-  Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; manifest-src 'self'; connect-src 'self'; media-src 'self' blob:; child-src 'self' blob:
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
-  Cross-Origin-Resource-Policy: cross-origin
-  Cross-Origin-Opener-Policy: same-origin
 
-*.js
-  Content-Type: text/javascript
+/*.js
+  Content-Type: application/javascript
 
-*.css
+/*.css
   Content-Type: text/css
+
+/*.html
+  Content-Type: text/html;charset=utf-8
